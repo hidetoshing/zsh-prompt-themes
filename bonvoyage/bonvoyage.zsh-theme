@@ -10,8 +10,8 @@ ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg_bold[yellow]%}?"
 # for superuser
 if [ ${UID} -eq 0 ]; then; NCOLOR="red"; else NCOLOR="green"; fi
 
-PROMPT='%{$fg_bold[$NCOLOR]%}[%n]%{$reset_color%} %# '
-RPS1='%{$fg[white]%}%2~$(git_prompt_info)$(git_prompt_status) %{$fg_bold[blue]%}%m%{$reset_color%}'
+PROMPT='%{$fg[$NCOLOR]%}[%n]%{$reset_color%} %# '
+RPS1='%{\e[1;37m%}%2~%{$reset_color%}$(git_prompt_info)$(git_prompt_status) %{$fg_bold[blue]%}%m%{$reset_color%}'
 
 ZSH_THEME_GIT_PROMPT_PREFIX=" %{$fg[yellow]%}⎇ %{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"

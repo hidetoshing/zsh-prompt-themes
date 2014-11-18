@@ -1,11 +1,11 @@
 ### vim:ft=zsh fenc=utf-8
 
-ZSH_THEME_GIT_PROMPT_ADDED="%{$fg_bold[green]%}[add]"
-ZSH_THEME_GIT_PROMPT_MODIFIED="%{$fg_bold[red]%}[mod]"
+ZSH_THEME_GIT_PROMPT_ADDED="%{$fg[green]%}[add]"
+ZSH_THEME_GIT_PROMPT_MODIFIED="%{$fg[red]%}[mod]"
 ZSH_THEME_GIT_PROMPT_DELETED="%{$fg[red]%}[del]"
 ZSH_THEME_GIT_PROMPT_RENAMED="%{$fg[red]%}[ren]"
-ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg_bold[red]%}[unmerge]"
-ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg_bold[yellow]%}[untrack]"
+ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg[red]%}[unmerge]"
+ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg[yellow]%}[untrack]"
 
 # for superuser
 if [ ${UID} -eq 0 ]; then; NCOLOR="red"; else NCOLOR="green"; fi

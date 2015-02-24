@@ -18,3 +18,12 @@ ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 ZSH_THEME_GIT_PROMPT_DIRTY=" "
 
+## file color
+export LSCOLORS=ExFxCxdxBxegedabagacad
+export LS_COLORS='di=01;34:ln=01;35:so=01;32:ex=01;31:bd=46;34:cd=43;34:su=41;30:sg=46;30:tw=42;30:ow=43;30'
+export ZLS_COLORS=$LS_COLORS
+zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
+if [ -n "$LS_COLORS" ]; then
+    zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+fi
+
